@@ -60,6 +60,9 @@ GEM
       nokogiri (~> 1.8)
       pathutil (~> 0.16)
       sprockets (>= 3.3, < 4.1.beta)
+    jekyll-favicon (0.2.5)
+      jekyll (~> 3.0)
+      mini_magick (~> 4.5)
     jekyll-sanity (1.2.0)
       jekyll (~> 3.1)
     jekyll-sass-converter (1.5.2)
@@ -100,7 +103,7 @@ GEM
       rqrcode
     ruby_dep (1.5.0)
     safe_yaml (1.0.4)
-    sass (3.7.2)
+    sass (3.7.3)
       sass-listen (~> 4.0.0)
     sass-listen (4.0.0)
       rb-fsevent (~> 0.9, >= 0.9.4)
@@ -113,6 +116,8 @@ GEM
       ethon (>= 0.9.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
+    uglifier (4.1.20)
+      execjs (>= 0.3.0, < 3)
     yell (2.0.7)
 
 PLATFORMS
@@ -122,11 +127,14 @@ DEPENDENCIES
   html-proofer
   jekyll
   jekyll-assets
+  jekyll-favicon
   jekyll-sitemap
   mini_magick
   rake
   rqrcode_png
+  sass
   sprockets (~> 4.0.beta)
+  uglifier
 
 BUNDLED WITH
    1.17.2
